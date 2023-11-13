@@ -1,0 +1,72 @@
+*{
+    background: #f3f2f2f7;
+}
+
+.main{
+    
+    margin: 1rem 10rem 0rem 7rem;
+}
+.topic{
+    display: flex;
+    flex-direction: row;
+}
+
+.topic button{
+    height: 2rem;
+    margin-top: 1.6rem;
+    margin-left: 1rem;
+    background-color: white;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    
+
+}
+table{
+    width: 100%;
+}
+table, th , td  {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+    
+}
+
+th{
+    background-color: white;
+    padding: .5rem 0rem .5rem 0rem;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.icon{
+    cursor: pointer;
+}
+.addc{
+    width: 4rem;
+}
+.filters{
+    margin-bottom: 3rem;
+}
+
+.search{
+    font-size: 2rem;
+}
+.search1{
+    border-radius: 3px;
+    border: none;
+    width: 22rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    border-bottom: 1px solid black;
+    margin-right: 1rem;
+}
+.search2{
+    border-radius: 2rem;
+    height: 2rem;
+    width: 4rem;
+}

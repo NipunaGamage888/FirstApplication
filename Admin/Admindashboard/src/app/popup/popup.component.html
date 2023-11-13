@@ -1,0 +1,40 @@
+<div class="main">
+    <div class="form1">
+        <div class="form2">
+            <form class="form">
+                <div class="set1">
+                    <div> 
+                        <input [(ngModel)]="itemName" [formControl]="itemNamec" type="text" placeholder="Item name"  class="inp" />
+                    </div>
+                    <div>
+                        
+                        <input [(ngModel)]="brand" [formControl]="brandc" type="text" placeholder="Brand"  class="inp" />
+                       
+                    </div>
+                    <div>
+                        
+                        <input [(ngModel)]="stock" [formControl]="stockc" type="datetime" placeholder="Stock" class="inp" />
+                       
+                    </div>
+                </div>
+                <div class="set2">
+                    <div>
+                       
+                        <input [(ngModel)]="price" [formControl]="pricec" type="text" placeholder="Price" class="inp"/>
+                    </div>
+                    <div>
+                       
+                        <input [(ngModel)]="dateEntered" [formControl]="dateEnteredc" type="text" placeholder="Date Entered" class="inp"/>
+                    </div>
+                    <div class="btn">
+                        <button type="submit"  class="btnsubmit" (click)="onSubmit()">Submit</button>
+                        <button type="submit"  class="btnsubmit2" (click)="onClose()">Close</button>
+                    </div>
+                </div>
+               
+            </form>
+        </div>
+            
+    </div>
+</div>
+

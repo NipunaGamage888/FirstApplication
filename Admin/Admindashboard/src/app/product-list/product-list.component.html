@@ -1,0 +1,45 @@
+<div>
+    <app-navigatebar></app-navigatebar>
+    <div class="main">
+        <div class="topic">
+            <h1>Products</h1>
+            <button (click)="onCreate()">Add New</button>
+        </div>
+        <div class="filters">
+            <div class="searches">
+                <label class="search">Search</label>
+                <input class="search1" type="text" placeholder="Enter the name of the Procuct" />
+                <button class="search2">Search</button>
+            </div>
+            
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th *ngFor="let column of headers">
+                        {{column}}
+                    </th>
+                </tr>
+                <tr *ngFor="let product of productArray">
+                  <td>
+                   {{product.itemName}}
+                  </td>
+                  <td>
+                    {{product.stock}}
+                  </td>
+                  <td >
+                    {{product.price}}
+                  </td>
+                  <td >
+                    {{product.brand}}
+                  </td>
+                  <td>
+                    <input type="number" [formControl]="stockc" class="addc"/>
+                    <button [disabled]="stockc.invalid">Add</button>
+                  </td>
+                </tr>
+            </table>
+              
+        </div>
+    </div>
+</div>

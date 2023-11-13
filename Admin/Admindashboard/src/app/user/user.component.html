@@ -1,0 +1,44 @@
+<div>
+    <app-navigatebar></app-navigatebar>
+    <div class="main">
+        <div class="topic">
+            <h1>Products</h1>
+            <button>Add New</button>
+        </div>
+        <div class="filters">
+            <div class="searches">
+                <label class="search">Search</label>
+                <input class="search1" type="text" placeholder="Enter the name of the Procuct" />
+                <button class="search2">Search</button>
+            </div>
+            
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th *ngFor="let column of headers">
+                        {{column}}
+                    </th>
+                </tr>
+                <tr *ngFor="let row of rows">
+                  <td>
+                   {{row.Name}}
+                  </td>
+                  <td>
+                    {{row.Stock}}
+                  </td>
+                  <td >
+                    {{row.Price}}
+                  </td>
+                  <td >
+                    {{row.Brand}}
+                  </td>
+                  <td>
+                    <button >Edit</button>
+                  </td>
+                </tr>
+            </table>
+              
+        </div>
+    </div>
+</div>

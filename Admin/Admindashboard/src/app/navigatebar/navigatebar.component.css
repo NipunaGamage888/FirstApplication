@@ -1,0 +1,41 @@
+.nav1{
+    color: white;
+    background-image: linear-gradient(
+      to right bottom,
+      #7dd56f,
+      #28b487
+    );
+    display: flex;
+    padding: 22px 10px;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+.btn1{
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px 15px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.btn2{
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px 15px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.h1b{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    
+}
+.footer{
+    bottom: 0;
+}

@@ -1,0 +1,50 @@
+.form{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.set1{
+    margin-right: 75px;
+}
+.set2{
+    margin-left: 75px;
+}
+.inp{
+    width: 130%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(150, 149, 149);
+    font-size: 16px;
+}
+.lbl{
+    margin-top: 0px;
+    padding: 0;
+    color: grey;
+    font-size: 13px;
+}
+.btnsubmit{
+    height: 30px;
+    width:75px ;
+    margin-top: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(52, 52, 253);
+}
+.btnsubmit2{
+    height: 30px;
+    width:75px ;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-left: 10px;
+    font-size: 15px;
+    background-color: orangered;
+}
+.btn{
+    display: flex;
+}

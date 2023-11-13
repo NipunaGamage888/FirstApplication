@@ -1,0 +1,29 @@
+<div class="form1">
+    <div class="form2">
+        <div>
+            <img class="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST2mXZyjeEgVKZ4yOV5SS2dL5UC10y0RRCew&usqp=CAU"/>
+        </div>
+        <h1 class="login">Login Here</h1>
+        <form class="form">
+            
+            <div>
+                <label for="name"class="lbl">Email</label><br>
+                <input [(ngModel)]="email" [formControl]='emailc' type="text" placeholder="Email"  class="inp" />
+            </div>
+            <div>
+                <label for="password" class="lbl">Password</label><br>
+                <input [(ngModel)]="password" [formControl]='passwordc' type="password" placeholder="Password" class="inp"/>
+            </div>
+            <div>
+                <button [disabled]="passwordc.invalid || emailc.invalid" type="submit" (click)="login()"   class="btnsubmit">Submit</button>
+            </div>
+            <div>
+                <a href="register"  class="link">Don't Have an account? Signup</a><br>
+                <a href="register" class="link">Forgot Password?</a>
+            </div>
+        </form>
+        <div class="link3">
+            <p class="link2">Yudaa Food & Cosmetics</p></div>
+    </div>
+        
+</div>

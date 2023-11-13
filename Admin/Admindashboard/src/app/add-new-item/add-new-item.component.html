@@ -1,0 +1,74 @@
+<app-navigatebar></app-navigatebar>
+<div class="form1">
+    <div class="form2">
+        <h1 class="login">Enter New Item Details Here</h1>
+        <form class="form" >
+            <div class="formdivide">
+            <div>
+                <div>
+                    <label for="itemname"class="lbl">Item Name</label><br>
+                    <input type="text" [(ngModel)]="itemName" [formControl]="itemNamec" placeholder="Item Name"  class="inp" />
+                   
+                </div>
+                <div>
+                    <label for="itemimage"class="lbl">Item Image</label><br>
+                    <input type="file" [(ngModel)]="itemImage" (change)="selectImage($event)" [formControl]="itemImagec" placeholder="Item Image"  class="inp" />
+                   
+                </div>
+                
+                <div>
+                    <label for="ingredients"class="lbl">Unhealthy Ingredients</label><br>
+                    <input type="text" [(ngModel)]="unhealthyIngredients" placeholder="Ingredients" [formControl]="ingredientsc" class="inp" />
+                   
+                </div>
+                <div>
+                    <label for="category" class="lbl">Item Category</label><br>
+                    <select class="inp" [(ngModel)]="itemCategory" [formControl]="itemCategoryc" >
+                        <option value="cosmetics">Cosmetics</option>
+                        <option value="Food">Food</option>
+                    </select>
+                   
+                </div>
+                <div>
+                    <label for="proteins"class="lbl">Proteins</label><br>
+                    <input type="text" [(ngModel)]="proteins" placeholder="Proteins" [formControl]="proteinsc" class="inp" />
+                   
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="fats" class="lbl">Fats</label><br>
+                    <input  type="text" placeholder="Fats" [(ngModel)]="fats" [formControl]="fatsc" class="inp"/>
+                </div>
+                <div>
+                    <label for="carbohydarates" class="lbl">Carbohydarates</label><br>
+                    <input  type="text" placeholder="Carbohydrates" [(ngModel)]="carbohydrates" [formControl]="carbsc" class="inp"/>
+                </div>
+                <div>
+                    <label for="calories" class="lbl">Calories</label><br>
+                    <input  type="text" placeholder="Calories" [(ngModel)]="calories" [formControl]="caloriesc" class="inp"/>
+                </div>
+    
+                <div>
+                    <label for="healthy" class="lbl">Good/Bad For Health</label><br>
+                    <select class="inp" [(ngModel)]="healthy" [formControl]="healthyc"  >
+                        <option value="Good">Good</option>
+                        <option value="Bad">Bad</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="substitute" class="lbl">Substitute</label><br>
+                    <input  type="text" placeholder="Substitute" [(ngModel)]="substitute" [formControl]="substitutec" class="inp"/>
+                </div>
+            </div>
+        </div>
+            
+            <div>
+                <button type="submit" [disabled]="itemCategoryc.invalid||itemImagec.invalid||itemNamec.invalid||ingredientsc.invalid||substitutec.invalid||healthyc.invalid||proteinsc.invalid||caloriesc.invalid||fatsc.invalid||carbsc.invalid" (click)="save()" class="btnsubmit">Submit</button>
+                
+            </div>
+        </form>
+        
+    </div>
+        
+</div>
